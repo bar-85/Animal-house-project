@@ -204,6 +204,7 @@ select {
   background: #f0fffa;
   border-radius: 15px;
   border: 1px solid #00ce89;
+  cursor: pointer;
 }
 
 button {
@@ -217,6 +218,14 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
+button:hover,
+button:active {
+  background-color: #0fc689;
+  border: 1px solid #0be099;
+  box-shadow: 0  0 2px #0be099;
+}
+
 ul {
   margin-top: 30px;
   padding: 20px 0;
