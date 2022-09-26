@@ -4,7 +4,7 @@
       <h2>{{ name }}</h2>
       <p><strong>Cena: </strong>{{ price }} zł</p>
       <button @click="toggleEuro">
-        {{ detailsEuro ? 'Ukryj cenę €' : 'Pokaż cenę €' }}
+        {{ detailsEuro ? 'Ukryj cenę EUR' : 'Pokaż cenę EUR' }}
       </button>
       <p v-if="detailsEuro"><strong>Cena: </strong>{{ euro }} €</p>
     </li>
