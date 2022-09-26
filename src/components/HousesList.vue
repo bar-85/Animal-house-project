@@ -3,13 +3,27 @@
     <li>
       <h2>{{ name }}</h2>
       <p><strong>Cena: </strong>{{ price }} zł</p>
+      <button @click="toggleEuro">
+        {{ detailsEuro ? 'Ukryj cenę €' : 'Pokaż cenę €' }}
+      </button>
+      <p v-if="detailsEuro"><strong>Cena: </strong>{{ euro }} €</p>
     </li>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['name', 'price', 'category'],
+  props: ['name', 'price', 'category', 'euro'],
+  data() {
+    return {
+      detailsEuro: false,
+    };
+  },
+  methods: {
+    toggleEuro() {
+      this.detailsEuro = !this.detailsEuro;
+    },
+  },
 };
 </script>
 
@@ -23,5 +37,9 @@ export default {
   box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.253);
   border-left: 15px solid #e4fcf4;
   border-right: 15px solid #e4fcf4;
+}
+button {
+  background: #cdffef;
+  color: black;
 }
 </style>

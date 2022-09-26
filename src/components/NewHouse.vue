@@ -12,8 +12,12 @@
         <input type="text" v-model="enteredName" required />
       </div>
       <div>
-        <label>Cena:</label>
+        <label>Cena PLN:</label>
         <input type="number" v-model="enteredPrice" required />
+      </div>
+      <div>
+        <label>Cena €:</label>
+        <input type="number" v-model="enteredEuro" required />
       </div>
       <div class="selectOption">
         <select v-model="enteredCategory" required>
@@ -38,6 +42,7 @@ export default {
       enteredName: '',
       enteredPrice: '',
       enteredCategory: '',
+      enteredEuro: '',
       detailsHome: false
     };
   },
@@ -47,7 +52,8 @@ export default {
         'add-home',
         this.enteredName,
         this.enteredPrice,
-        this.enteredCategory
+        this.enteredCategory,
+        this.enteredEuro
       );
     },
     toggleHome() {

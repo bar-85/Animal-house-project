@@ -11,8 +11,6 @@
       <button v-on:click="resetOptions">Wszystkie produkty</button>
     </div>
 
-    <div></div>
-
     <label for="vol">Cena (0-2000):</label>
 
     <input
@@ -29,12 +27,14 @@
     <div class="projectList">
       <new-house @add-home="addHome"></new-house>
       <input type="text" v-model="name" placeholder="Szukaj..." />
+
       <ul>
         <houses-list
           v-for="animal in filterAnimals"
           :key="animal.id"
           :id="animal.id"
           :name="animal.name"
+          :euro="animal.euro"
           :price="animal.price"
           :category="animal.category"
         ></houses-list>
@@ -58,12 +58,14 @@ export default {
           name: 'Jeż',
           price: 560,
           category: 'Ground',
+          euro: 120,
         },
         {
           id: 2,
           name: 'Lis',
           price: 1500,
           category: 'Ground',
+          euro: 315,
         },
 
         {
@@ -71,24 +73,28 @@ export default {
           name: 'Szpak',
           price: 250,
           category: 'Tree',
+          euro: 52,
         },
         {
           id: 9,
           name: 'Wiewiórka',
           price: 450,
           category: 'Tree',
+          euro: 94,
         },
         {
           id: 11,
           name: 'Jeleń',
           price: 1950,
           category: 'Ground',
+          euro: 410,
         },
         {
           id: 13,
           name: 'Jerzyk',
           price: 309,
           category: 'Tree',
+          euro: 65,
         },
       ],
     };
@@ -102,12 +108,13 @@ export default {
   },
 
   methods: {
-    addHome(name, price, category) {
+    addHome(name, price, category, euro) {
       const newAddHome = {
         id: new Date().toISOString(),
         name: name,
         price: price,
         category: category,
+        euro: euro,
       };
       this.animals.push(newAddHome);
     },
