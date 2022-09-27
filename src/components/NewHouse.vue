@@ -16,7 +16,7 @@
         <input type="number" v-model="enteredPrice" required />
       </div>
       <div>
-        <label>Cena €:</label>
+        <label>Cena EUR:</label>
         <input type="number" v-model="enteredEuro" required />
       </div>
       <div class="selectOption">
