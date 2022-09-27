@@ -222,7 +222,6 @@ button {
 button:hover,
 button:active {
   background-color: #0fc689;
-  border: 1px solid #0be099;
   box-shadow: 0  0 2px #0be099;
 }
 
