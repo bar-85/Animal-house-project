@@ -14,11 +14,11 @@ Stronę można zobaczyć pod adresem: https://domki-dla-zwierzat.netlify.app/
 <br />
 
 
-![Screenshot_5](https://user-images.githubusercontent.com/105555319/192393718-7095e1c9-cac3-4127-b442-666c0b038f86.png)
+![Screenshot_4](https://user-images.githubusercontent.com/105555319/192403968-e499a8b0-5d5d-4b4f-9988-d96455e1952a.png)
 <br />
 ![Screenshot_8](https://user-images.githubusercontent.com/105555319/192393749-d229f110-2452-449b-8f4e-6666f4ef1d9e.png)
 <br />
-![Screenshot_6](https://user-images.githubusercontent.com/105555319/192393803-7752614a-46c4-4e37-a9e9-6d693a33ce6f.png)
+![Screenshot_5](https://user-images.githubusercontent.com/105555319/192403989-4b79103a-8744-4ca4-b6c5-496ff0e2d6a6.png)
 <br />
 ![Screenshot_7](https://user-images.githubusercontent.com/105555319/192393825-1fa17d09-9d00-4290-a06a-a9b1344cf919.png)
 
