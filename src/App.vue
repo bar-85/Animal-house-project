@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Lista domków dla zwierząt</h1>
+    <Header />
 
     <div class="selectOption">
       <select v-model="category">
@@ -44,7 +44,12 @@
 </template>
 
 <script>
+import Header from './components/Header.vue'
+
 export default {
+  components: {
+    Header
+  },
   data() {
     return {
       category: '',
